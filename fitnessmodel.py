@@ -1,0 +1,2 @@
+class FitnessModel(object):
+    pass

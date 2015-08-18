@@ -1,0 +1,2 @@
+class FitnessView(object):
+    pass
