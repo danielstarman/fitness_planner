@@ -24,18 +24,21 @@
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fitnessmodel.py">
+    <Compile Include="src\fitnessmodel.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="fitnesscontroller.py">
+    <Compile Include="src\fitnesscontroller.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="fitnessview.py">
+    <Compile Include="src\fitnessview.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="main.py">
+    <Compile Include="src\main.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
