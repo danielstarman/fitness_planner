@@ -36,7 +36,7 @@
     <Compile Include="src\main.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ui\main_window.py" />
+    <Compile Include="src\main_window.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
