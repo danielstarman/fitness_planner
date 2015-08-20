@@ -16,5 +16,9 @@ class FitnessView(QtGui.QMainWindow):
         self.ui = Ui_Form()
         self.ui.setupUi(self)
         
+    QtCore.Slot(str)
+    def add_day_label(self, string):
+        self.ui.workout_day_combo.addItem(string)
+        self.ui.workout_day_combo.setCurrentIndex(self.ui.workout_day_combo.count() - 1)
 
     
