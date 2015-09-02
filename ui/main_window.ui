@@ -6,18 +6,23 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>881</width>
+    <width>956</width>
     <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QObject#Form{
+
+}</string>
+  </property>
   <widget class="Phonon::VideoPlayer" name="tutorial_video">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>0</y>
+     <x>330</x>
+     <y>20</y>
      <width>300</width>
      <height>200</height>
     </rect>
@@ -26,8 +31,8 @@
   <widget class="QPushButton" name="tutorial_button">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>210</y>
+     <x>330</x>
+     <y>230</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -36,21 +41,11 @@
     <string>Show Video</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="workout_day_combo">
-   <property name="geometry">
-    <rect>
-     <x>620</x>
-     <y>10</y>
-     <width>141</width>
-     <height>22</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QPushButton" name="add_day_button">
    <property name="geometry">
     <rect>
-     <x>760</x>
-     <y>10</y>
+     <x>480</x>
+     <y>240</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -59,20 +54,10 @@
     <string>Add Day</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="exercise_table">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>60</y>
-     <width>221</width>
-     <height>481</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QTableWidget" name="workout_table">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>690</x>
      <y>40</y>
      <width>256</width>
      <height>521</height>
@@ -82,8 +67,8 @@
   <widget class="QPushButton" name="day_delete_button">
    <property name="geometry">
     <rect>
-     <x>840</x>
-     <y>10</y>
+     <x>650</x>
+     <y>240</y>
      <width>31</width>
      <height>21</height>
     </rect>
@@ -96,7 +81,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>20</y>
+     <y>10</y>
      <width>181</width>
      <height>22</height>
     </rect>
@@ -105,9 +90,9 @@
   <widget class="QGroupBox" name="exercise_groupbox">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>240</y>
-     <width>331</width>
+     <x>260</x>
+     <y>270</y>
+     <width>191</width>
      <height>281</height>
     </rect>
    </property>
@@ -119,12 +104,45 @@
      <rect>
       <x>0</x>
       <y>20</y>
-      <width>331</width>
+      <width>191</width>
       <height>261</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="exercise_label"/>
    </widget>
+  </widget>
+  <widget class="QTableWidget" name="exercise_table">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>256</width>
+     <height>521</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="workout_table_2">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>270</y>
+     <width>161</width>
+     <height>291</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rename_button">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>240</y>
+     <width>81</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rename Day</string>
+   </property>
   </widget>
  </widget>
  <customwidgets>
