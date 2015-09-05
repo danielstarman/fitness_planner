@@ -121,7 +121,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTableWidget" name="workout_table_2">
+  <widget class="QTableWidget" name="day_table">
    <property name="geometry">
     <rect>
      <x>510</x>

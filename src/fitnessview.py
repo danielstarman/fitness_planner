@@ -18,7 +18,7 @@ class FitnessView(QtGui.QMainWindow):
         
     QtCore.Slot(str)
     def add_day_label(self, string):
-        self.ui.workout_day_combo.addItem(string)
-        self.ui.workout_day_combo.setCurrentIndex(self.ui.workout_day_combo.count() - 1)
-
+        new_day = QtGui.QTableWidgetItem(string)
+        self.ui.day_table.setRowCount(self.ui.day_table.rowCount() + 1)
+        self.ui.day_table.setItem(self.ui.day_table.rowCount() - 1, 0, new_day)
     

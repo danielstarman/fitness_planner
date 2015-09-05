@@ -22,6 +22,7 @@ class FitnessController(QtCore.QObject):
         self.view.ui.add_day_button.clicked.connect(model.add_day)
         self.model.day_added.connect(self.day_added)
         self.day_label_created.connect(self.view.add_day_label)
+        self.view.ui.day_table.setColumnCount(1)
 
     @QtCore.Slot(str)
     def day_added(self, string):
