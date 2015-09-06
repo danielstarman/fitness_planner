@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'main_window.ui'
 #
-# Created: Fri Sep 04 21:27:27 2015
+# Created: Sat Sep 05 21:49:51 2015
 #      by: pyside-uic 0.2.15 running on PySide 1.2.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -52,9 +52,12 @@ class Ui_Form(object):
         self.exercise_table.setRowCount(0)
         self.day_table = QtGui.QTableWidget(Form)
         self.day_table.setGeometry(QtCore.QRect(510, 270, 161, 291))
+        self.day_table.setEditTriggers(QtGui.QAbstractItemView.NoEditTriggers)
+        self.day_table.setShowGrid(False)
         self.day_table.setObjectName("day_table")
         self.day_table.setColumnCount(0)
         self.day_table.setRowCount(0)
+        self.day_table.horizontalHeader().setVisible(False)
         self.rename_button = QtGui.QPushButton(Form)
         self.rename_button.setGeometry(QtCore.QRect(560, 240, 81, 23))
         self.rename_button.setObjectName("rename_button")
