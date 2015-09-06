@@ -21,4 +21,11 @@ class FitnessView(QtGui.QMainWindow):
         new_day = QtGui.QTableWidgetItem(string)
         self.ui.day_table.setRowCount(self.ui.day_table.rowCount() + 1)
         self.ui.day_table.setItem(self.ui.day_table.rowCount() - 1, 0, new_day)
+
+    QtCore.Slot()
+    def rename_prompt(self):
+        text, ok = QtGui.QInputDialog.getText(self, 'Rename day', 'Enter new name')
+
+        if ok:
+            print text
     
