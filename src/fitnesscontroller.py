@@ -27,6 +27,8 @@ class FitnessController(QtCore.QObject):
 
         #Renaming a day connections
         self.view.ui.rename_button.clicked.connect(self.view.rename_prompt)
+        self.view.day_renamed.connect(self.model.day_renamed)
+        self.model.day_changed.connect(self.view.day_renamed)
 
     @QtCore.Slot(str)
     def day_added(self, string):
