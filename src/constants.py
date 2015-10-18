@@ -1,0 +1,1 @@
+exercise_groups = ['Chest', 'Legs', 'Back', 'Shoulders', 'Arms', 'Core', 'Cardio', 'Other']
